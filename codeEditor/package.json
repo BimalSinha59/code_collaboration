@@ -1,22 +1,20 @@
 {
-  "name": "package.json",
+  "name": "code-collab",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start:front":"react-scripts start",
-    "start":"npm run build && server:prod",
-    "runback": "nodemon server.mjs",
-    "server:prod": "node server.mjs",
+    "start": "node server.mjs",
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server:prod": "node server.mjs",
+    "runback": "nodemon server.mjs"
   },
   "dependencies": {
     "codemirror": "^5.65.20",
     "dotenv": "^17.2.1",
-    "express": "^5.1.0",
+    "express": "^4.19.2",
     "react": "^19.1.1",
     "react-avatar": "^5.0.4",
     "react-dom": "^19.1.1",
