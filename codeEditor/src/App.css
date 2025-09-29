@@ -36,7 +36,8 @@ footer a{
 }
 
 .homePageLogo{
-  height: 80px;
+  height: 70px;
+  border-radius: 10px;
   margin-bottom: 30px;
 }
 
@@ -133,6 +134,7 @@ footer a{
 
 .logoImage{
   height: 60px;
+  border-radius: 8px;
 }
 
 .leaveBtn{

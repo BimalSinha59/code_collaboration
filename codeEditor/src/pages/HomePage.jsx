@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import {toast} from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom';
+import hpLogo from '../assets/code_collaboration_LOGO.png'
 
 
 function HomePage() {
@@ -41,7 +42,7 @@ function HomePage() {
     return (
         <div className='homePageWrapper'>
             <div className='formWrapper'>
-                <img className="homePageLogo" src="#" alt="#" />
+                <img className="homePageLogo" src={hpLogo} alt="homepagelogo" />
                 <h4 className='mainLabel'>Paste invitation Room ID</h4>
                 <div className='inputGroup'>
                     <input 

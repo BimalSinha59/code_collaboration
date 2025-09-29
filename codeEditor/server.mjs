@@ -14,7 +14,13 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server);
+
+const io = new Server(server, {
+  cors: {
+    origin: "*", 
+    methods: ["GET", "POST"],
+  },
+});
 
 // Serve built frontend
 app.use(express.static(path.join(__dirname, 'dist')));

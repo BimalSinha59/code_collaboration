@@ -6,6 +6,7 @@ import ACTIONS from '../../Actions';
 import toast from 'react-hot-toast';
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import epLogo from '../assets/code_collaboration_LOGO.png'
 
 function EditorPage() {
 
@@ -69,7 +70,7 @@ function EditorPage() {
         init();
         
 
-        //clear the listeners and disconnect the socket -> it prevents memory leaskage
+        //clear the listeners and disconnect the socket -> it prevents memory leackage
         return () => {
             socketRef.current.off(ACTIONS.JOIN);
             socketRef.current.off(ACTIONS.DISCONNECTED);
@@ -106,7 +107,7 @@ function EditorPage() {
                     <div className="logo">
                         <img 
                             className='logoImage'
-                            src="#" alt="logo"
+                            src={epLogo} alt="Editorpagelogo"
                         />
                     </div>
 

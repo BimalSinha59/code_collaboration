@@ -1,5 +1,7 @@
 import { io } from 'socket.io-client';
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || '/';
+
 export const initSocket = async () => {
     const options = {
         forceNew: true,
@@ -8,5 +10,5 @@ export const initSocket = async () => {
         transports: ['websocket'],
     };
 
-    return io(import.meta.env.VITE_BACKEND_URL, options);
+    return io(BACKEND_URL, options);
 };
