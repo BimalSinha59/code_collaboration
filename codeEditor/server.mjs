@@ -17,7 +17,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "*", 
+    origin: "https://code-collaboration-by-b20.onrender.com", 
     methods: ["GET", "POST"],
   },
 });
