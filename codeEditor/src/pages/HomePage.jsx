@@ -71,7 +71,7 @@ function HomePage() {
             <footer>
                 <h4>
                     Built with 💛 by {' '}
-                    <a href="githublink">Bimal Sinha</a>
+                    <a href="https://github.com/BimalSinha59">Bimal Sinha</a>
                 </h4>
             </footer>
         </div>
